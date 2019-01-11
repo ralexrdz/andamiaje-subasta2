@@ -12,7 +12,7 @@ class Bidder extends Component {
     console.log(this.props)
     let who = this.props.who
     let amount = parseInt(document.getElementById('bid').value)
-    axios.post('https://hanc.serveo.net/bids', {
+    axios.post('https://pusher-node-auction--ralexrdz.repl.co/bids', {
       name: who,
       amount: amount
     })

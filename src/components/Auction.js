@@ -34,7 +34,7 @@ class Auction extends Component {
       showAuction: true,
       me: name
     })
-    axios.post('https://hanc.serveo.net/participants', {
+    axios.post('https://pusher-node-auction--ralexrdz.repl.co/participants', {
       participant: name
     }).then((data) => {
       console.log()
@@ -47,7 +47,7 @@ class Auction extends Component {
       showAuction: false,
       me: null
     })
-    axios.delete(`https://hanc.serveo.net/participants/${me}`)
+    axios.delete(`https://pusher-node-auction--ralexrdz.repl.co/participants/${me}`)
     .then((data) => {
       console.log('bye')
     })
